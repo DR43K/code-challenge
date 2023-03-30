@@ -12,11 +12,15 @@
   <h2>Encoded String Parser</h2>
   <p>Please insert an encoded string and press the button to see the result</p>
 
+  <input type="text" name="encodedString" [(ngModel)]="encodedString" class="input">
+
   <div class="card-container">
-    <a class="card" rel="noopener">
+    <button class="card" (click)="onClickResult()">
       <span>See Result!</span>
-    </a>
+    </button>
   </div>
+
+  <h2>{{resultLabel}}</h2>
 
   <!-- Footer -->
   <footer class="footer">
